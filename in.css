@@ -1,0 +1,406 @@
+.label{
+		background-color: rgba(0,0,0,0.6);
+		color: rgba(255,255,255,1);
+		height: 6vh;
+		width: 100vw;
+		display: block;
+		position: fixed;
+		font-family: Shadows Into Light, Noto Serif TC, serif;
+		font-size: 2.5vh;
+		z-index: 20;
+		text-align: right;
+	}
+	#home{
+		position: absolute;
+		font-size: 4vh;
+		text-align: center;
+		width:30vw;
+		left:100vw;
+		display: block;
+		animation-duration: 2s;
+		animation-iteration-count: 1;
+		overflow: visible;
+	}
+
+	#menu, #menu1 ,#menu2, #menu3 ,#menu4 ,#menu5{
+		position: absolute;
+		top: 2vh;
+		width:8vw;
+		right: -20vw;
+		background-color:rgba(0,0,0,0);
+		display: block;
+		text-align: center;
+		animation-duration: 2s;
+		animation-iteration-count: 1; 
+	}
+	.label div:hover{
+		color: gray;
+	}
+	#menu div{
+	 background-color: rgba(0,0,0,0.6);
+	}
+	a:link{
+	text-decoration:none;
+	background-color: rgba(0,0,0,0);
+	color: white;
+	}
+	a:visited {
+	text-decoration:none;
+	color: white;
+	background-color: rgba(0,0,0,0);
+	}
+	a:hover {
+	text-decoration:none;
+	background-color: rgba(0,0,0,0);
+	color: gray;
+	}
+	a:active {
+	text-decoration:none;
+	background-color: rgba(0,0,0,0);
+	color: gray;
+	}
+	*{
+		padding: 0px;
+		margin: 0px;
+		border: 0px;
+		-moz-user-select:none;
+		-webkit-user-select: none;  
+	}
+	@keyframes togetin{
+		0%{
+			opacity: 0;
+			display:none;
+			left:100vw;
+		}
+		100%{
+			opacity: 1;
+			display: inline-block;
+			left: 0vw;
+		}
+
+	}
+	@keyframes togetin1{
+		0%{
+			opacity: 0;
+			display:none;
+			right:-20vw;
+		}
+		100%{
+			opacity: 1;
+			display: inline-block;
+			right: 42vw;
+		}
+
+	}
+	@keyframes togetin2{
+		0%{
+			opacity: 0;
+			display:none;
+			right:-20vw;
+		}
+		100%{
+			opacity: 1;
+			display: inline-block;
+			right: 34vw;
+		}
+
+	}
+	@keyframes togetin3{
+		0%{
+			opacity: 0;
+			display:none;
+			right:-20vw;
+		}
+		100%{
+			opacity: 1;
+			display: inline-block;
+			right: 26vw;
+		}
+
+	}
+	@keyframes togetin4{
+		0%{
+			opacity: 0;
+			display:none;
+			right:-20vw;
+		}
+		100%{
+			opacity: 1;
+			display: inline-block;
+			right: 18vw;
+		}
+
+	}
+	@keyframes togetin5{
+		0%{
+			opacity: 0;
+			display:none;
+			right:-20vw;
+		}
+		100%{
+			opacity: 1;
+			display: inline-block;
+			right: 9vw;
+		}
+
+	}
+	@keyframes togetin6{
+		0%{
+			opacity: 0;
+			display:none;
+			right:-20vw;
+		}
+		100%{
+			opacity: 1;
+			display: inline-block;
+			right: 0vw;
+		}
+
+	}
+@keyframes slidein{
+	0%{
+		width: :-100vw;
+	}
+	60%{
+		left: 0px;
+	}
+	90%{
+		left:0px;
+	}
+	100%{
+		left:100vw;
+		display: none;
+	}
+}
+@keyframes counter_slidein{
+	0%{
+		left:100vw;
+	}
+	60%{
+		left: 0px;
+	}
+	90%{
+		left:0px;
+	}
+	100%{
+		left:-100vw;
+		display: none;
+	}
+}
+.foranimation {
+	width: 100vw;
+	height: 50vh;
+	
+}
+* {
+	margin: 0px;
+	border: 0px;
+	padding:0px;
+	position: absolute;
+}
+body{
+	overflow:hidden;
+	background-color: rgba(200,200,200,1);
+}
+#up{
+	left:-100vw;
+	top:0px;
+	background-color: black; 
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-name: slidein;
+}
+#down{
+	left:100vw;
+	top:50vh;
+	background-color: white;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-name: counter_slidein;
+}
+.X{
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size:25vh ;
+	position: absolute;
+	text-align: center;
+	width: 100vw;
+	z-index: 3;
+	overflow: hidden;
+	color: white;
+	display: none;
+}
+._X{
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size:25vh ;
+	position: absolute;
+	text-align: center;
+	width: 100vw;
+	color: black;
+	z-index: 2;
+	display: none;
+}
+#upword{
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size:25vh ;
+	left: 0vw;
+	top: 0vh;
+	z-index: 5;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-name: wordslidein;
+	color:white;
+	text-align: center;
+	background-color: rgba(0,0,0,0);
+	width:100vw;
+	height:50vh;
+	transform: translateY(25%);
+	line-height: 25vh;
+
+}
+#downword{
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size:25vh ;
+	left:0vw;
+	top:50vh;
+	z-index: 5;
+	text-align: center;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-name: wordcounter_slidein;
+	color:black;
+	background-color: rgba(0,0,0,0);
+	width:100vw;
+	height:50vh;
+	transform: translateY(25%);
+	line-height: 25vh;
+
+}
+@keyframes wordslidein{
+	0%{
+		left:-100vw;
+	}
+	60%{
+		left: 0px;
+	}
+	100%{
+		left:0px;
+		display: none;
+	}
+}
+@keyframes wordcounter_slidein{
+	0%{
+		left:100vw;
+	}
+	60%{
+		left: 0px;
+	}
+	100%{
+		left:0px;
+		display: none;
+	}
+}
+.slide{
+	display: none;
+	height: 100vh;
+	width: 100vw;
+}
+.slide_first{
+	
+}
+.slide_second{
+	
+}
+.slide_third{
+	
+}
+.slide_fourth{
+	
+}
+.slide_fifth{
+	
+}
+.slide_sixth{
+	
+}
+#d1{
+	display: none;
+}
+#d2{
+	display: none;
+}
+#d3{
+	display: none;
+}
+#d4{
+	display: none;
+}
+.picture{
+	width: 100vw;
+	height: 120vh;
+}
+
+.jpgg{
+	width: 40vw;
+	height: 50vh;
+	animation-name: in;
+	animation-duration: 5s;
+}
+.eword{
+	font-size: 2vw;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	color: white;
+	animation-delay: 3s;
+}
+.cword{
+	font-size: 2vw;
+	font-family: Noto Serif TC, serif;
+	color: white;
+	animation-delay: 3s;
+}
+@keyframes typing {
+  from { width: 0 }
+}
+.word{
+  width: 50vw;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 2s steps(35)
+}
+@keyframes in{
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+.aurora{
+	font-size: 8vw;
+	font-family: Noto Serif TC, serif;
+	color: white;
+	animation-name: in;
+	animation-duration: 1s;
+}
+.phoenix{
+	font-size: 8vw;
+	font-family: Noto Serif TC, serif;
+	animation-name: in;
+	animation-duration: 1s;
+}
+#title{
+	font-size: 6.5em;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	color: white;
+	animation-name: in;
+	animation-duration: 3s;
+}
+.sub{
+	font-size: 3em;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	color: white;
+	animation-name: in;
+	animation-duration: 3s;
+}
+.middle{
+	font-size: 1.25em;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	color: white;
+	animation-name: in;
+	animation-duration: 3s;
+}
